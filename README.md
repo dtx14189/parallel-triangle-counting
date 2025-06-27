@@ -39,8 +39,6 @@ $ g++ -std=c++17 -O3 -pthread \
     gbbs/benchmarks/TriangleCounting/ShunTangwongsan15/Triangle.cc \
     gbbs/gbbs/graph_io.cc gbbs/gbbs/io.cc gbbs/gbbs/helpers/parse_command_line.cc \
     gbbs/gbbs/encodings/byte.cc \
-    gbbs/gbbs/encodings/byte_pd.cc \
-    gbbs/gbbs/encodings/byte_pd_amortized.cc \
     -I. -Igbbs -Iparlaylib/include \
     -o TriangleCount
 $ ./TriangleCount -s test_graphs/rbl_email_enron.adj
