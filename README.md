@@ -33,11 +33,11 @@ To run the corresponding test for the GBBS benchmark, you can run the following 
 
 ```
 $ g++ -std=c++17 -O3 -pthread \
-    benchmarks/TriangleCounting/ShunTangwongsan15/Triangle.cc \
-    gbbs/graph_io.cc gbbs/io.cc gbbs/helpers/parse_command_line.cc \
-    gbbs/encodings/byte.cc \
-    gbbs/encodings/byte_pd.cc \
-    gbbs/encodings/byte_pd_amortized.cc \
+    gbbs/benchmarks/TriangleCounting/ShunTangwongsan15/Triangle.cc \
+    gbbs/gbbs/graph_io.cc gbbs/gbbs/io.cc gbbs/gbbs/helpers/parse_command_line.cc \
+    gbbs/gbbs/encodings/byte.cc \
+    gbbs/gbbs/encodings/byte_pd.cc \
+    gbbs/gbbs/encodings/byte_pd_amortized.cc \
     -I. -Igbbs -Iparlaylib/include \
     -o TriangleCount
 $ ./TriangleCount -s test_graphs/rbl_email_enron.adj
