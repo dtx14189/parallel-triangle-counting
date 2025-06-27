@@ -29,8 +29,10 @@ $ make final
 $ ./final test_graphs/rbl_email_enron.adj
 ```
 
-To run the corresponding test for the GBBS benchmark, you can run the following commands. Run both commands while you are in the main project folder. *Note that if you are on the Yale Zoo, you do not need to run the first command, as we include the precompiled ./TriangleCount executable in the repository.*
+To run the corresponding test for the GBBS benchmark, you can run the following commands. Run both commands while you are in the main project folder. 
 
+*Note 1: If you are on the Yale Zoo, you do not need to run the first command, as we include the precompiled ./TriangleCount executable in the repository.*
+*Note 2: The first command requires you to have cloned recursively because gbbs is a submodule.*
 ```
 $ g++ -std=c++17 -O3 -pthread \
     gbbs/benchmarks/TriangleCounting/ShunTangwongsan15/Triangle.cc \
